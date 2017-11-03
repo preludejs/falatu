@@ -1,4 +1,6 @@
 <?php
+include 'lock.php';
+
 	$_SESSION['id_para'] = $_GET['usuario'];
 ?>
 <div id="content">

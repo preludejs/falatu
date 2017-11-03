@@ -1,4 +1,6 @@
 <?php
+include 'lock.php';
+
 $user = $_GET['usuario'];
 
 $query = mysqli_query($con, "SELECT * FROM `usuarios` WHERE `user` = '$user' ");
