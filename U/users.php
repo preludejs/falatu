@@ -63,6 +63,17 @@
 		<a href="#"><i class="fa fa-envelope"></i> Mensagens <span class="pull-right alert-numb"><?php print $totalMsg = 23; ?></span></a>
 		<div class="sub-nav">
 			<a href="#">Enviadas <span class="pull-right alert-numb">11</span></a>
+			<div class="sub-nav">
+				<div class="html chat">
+					<div class="user user-khadkamhn clearfix">
+						<span class="text-msg pull-right">mensagem enviada</span>
+					</div>
+					<div class="user user-dribble clearfix">
+						<span class="photo pull-left" data-username="dribbble"><i class="fa fa-dribbble"></i></span>
+						<span class="text-msg">mensagem recebida</span>
+					</div>
+				</div>
+			</div>
 			<a href="#">Recebidas <span class="pull-right alert-numb">10</span></a>
 			<a href="#">Conversações <span class="pull-right alert-numb">2</span></a>
 		</div>

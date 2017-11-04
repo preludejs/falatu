@@ -1,5 +1,5 @@
 <?php
-include 'lock.php';
+//include 'lock.php';
 
 $user = $_GET['usuario'];
 
@@ -16,18 +16,25 @@ if(mysqli_num_rows($query) > 0){
 	exit();
 }
 ?>
-<div class="col-md-6 col-md-offset-3" style=" border-style: solid;
-    border-color: #00f;">
-	<div >
-		<div class='box-comentario'>
-			<div class='foto-contato'>
-				<div><img src="<?php print $foto; ?>" class="foto-user"></div>
-			</div>
-			<div class='comentario'>
-				<div class='titulo-comentario'>
-					asfsa
-				</div>
-			</div>
-		</div>
-	</div>
+
+<link rel="stylesheet" href="css/balao.css">
+
+<div class="col-md-6 col-md-offset-3">
+<div id="wrapper">
+<div class="window">
+  <div class="windowrap">
+    <div class="bot">
+    	
+      <h3><img src="<?php print $foto; ?>" class="foto-user"> <?php print $user; ?></h3>
+
+      </div>
+  <div class="chatwindow"></div>
+  <form id="messenger" action="" method="get" name="messenger">
+    <input type="text" name="enter" class="enter" value="" placeholder="say something..." id="message"/>
+    <div class="send"><input type="submit" value="" id="btn" tabindex="-1"/></div>
+  </form>
+  </div>
 </div>
+</div>
+</div>
+			
